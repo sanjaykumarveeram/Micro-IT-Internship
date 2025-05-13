@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Neon Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Neon Tic Tac Toe</h1>
+
+  <div id="game-board" class="board"></div>
+
+  <div class="scoreboard">
+    <h2>Scoreboard</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Player X</th>
+          <th>Player O</th>
+          <th>Draws</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="scoreX">0</td>
+          <td id="scoreO">0</td>
+          <td id="scoreDraw">0</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="message">Player X's Turn</h2>
+  <button onclick="resetGame()">Play Again</button>
+
+  <footer>
+    It is created by <strong>Veeram Sanjay Kumar ( Micro IT )</strong>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

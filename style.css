@@ -1,0 +1,97 @@
+body {
+  background-color: #000;
+  color: #00ffee;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3.5rem;
+  text-shadow: 0 0 20px #00ffee;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 180px);
+  grid-template-rows: repeat(3, 180px);
+  gap: 15px;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+.cell {
+  background: #111;
+  border: 2px solid #00ffee;
+  box-shadow: 0 0 15px #00ffee;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #ff00ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cell:hover {
+  background-color: #222;
+  box-shadow: 0 0 25px #00ffff;
+}
+
+.scoreboard {
+  margin-top: 40px;
+}
+
+.scoreboard h2 {
+  font-size: 2rem;
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff;
+}
+
+.scoreboard table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 60%;
+  font-size: 1.8rem;
+  color: #00ffee;
+  box-shadow: 0 0 20px #0ff;
+}
+
+.scoreboard th, .scoreboard td {
+  border: 2px solid #00ffee;
+  padding: 15px 25px;
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 2rem;
+  color: #ffff00;
+  text-shadow: 0 0 10px #ffff00;
+}
+
+button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #00ffee;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 0 15px #00ffee;
+}
+
+button:hover {
+  background-color: #00ccdd;
+  box-shadow: 0 0 25px #00ffee;
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 1.2rem;
+  color: #cccccc;
+  text-shadow: 0 0 5px #00ffff;
+}
